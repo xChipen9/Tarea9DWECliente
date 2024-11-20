@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasifica las Palabras</title>
+    <link rel="stylesheet" href="../Tarea9DWECliente/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Clasifica las Palabras</h1>
+        <p>Arrastra las palabras y clasifícalas correctamente en <strong>Frutas</strong>, <strong>Animales</strong> y <strong>Colores</strong>.</p>
+    </div>
+
+    <div class="container">
+        <div class="categorias">
+            <div class="categoria" id="frutas">
+                <h2>Frutas 🍎</h2>
+            </div>
+            <div class="categoria" id="animales">
+                <h2>Animales 🐾</h2>
+            </div>
+            <div class="categoria" id="colores">
+                <h2>Colores 🎨</h2>
+            </div>
+        </div>
+
+        <div class="palabras">
+            <p class="palabra" draggable="true" id="manzana">Manzana</p>
+            <p class="palabra" draggable="true" id="perro">Perro</p>
+            <p class="palabra" draggable="true" id="rojo">Rojo</p>
+            <p class="palabra" draggable="true" id="plátano">Pera</p>
+            <p class="palabra" draggable="true" id="gato">Gato</p>
+            <p class="palabra" draggable="true" id="azul">Azul</p>
+        </div>
+    </div>
+
+    <button id="validar">Validar Respuestas</button>
+    <p id="comentario"></p>
+
+    <script src="../Tarea9DWECliente/index.js"></script>
+</body>
+</html>

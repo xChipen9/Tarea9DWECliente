@@ -1,0 +1,109 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f7;
+    text-align: center;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Categorías */
+.categorias {
+    display: flex;
+    gap: 20px;
+}
+
+.categoria {
+    flex: 1;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 200px;
+    background: #fff;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+    border-color: #6a11cb;
+}
+
+.categoria h2 {
+    margin-bottom: 10px;
+    color: #6a11cb;
+}
+
+/* Palabras */
+.palabras {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.palabra {
+    background: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 16px;
+    cursor: grab;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.palabra:hover {
+    background: #e0f7fa;
+    transform: scale(1.1);
+}
+
+.palabra.correct {
+    background: #b2fab4;
+    border-color: #4caf50;
+    color: white;
+}
+
+.palabra.incorrect {
+    background: #ffcdd2;
+    border-color: #f44336;
+    color: white;
+}
+
+button {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+#comentario {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
